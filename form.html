@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sample</title>
+    <link rel="icon" href="img/3.jpg">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+		</nav>
+		<h1>
+			Trip to South America to explore the sloths.
+		</h1>
+	</header>
+    <main>
+        <form action="https://formspree.io/mjvaoyze" method="POST">
+            
+            <label>
+                1. Input your name:
+                <input type="text" name="clien-name" placeholder="Your name:" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                2. Input your email:
+                <input type="text" name="clien-email" placeholder="Your email:" required>
+            </label>
+            <br>
+            <br>
+
+            <label>
+                3. What date would suit you?
+                <input type="date" name="client-date">
+            </label>
+            <br>
+            <br>
+            <label>
+                4. Can you help financially?
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="look-like" value="yes" checked>Yeees!
+            </label>
+            <label>
+                
+                <input type="radio" name="look-like" value="no">No, no, no
+            </label>
+            <br>
+            <br>
+            <label>
+                5. Choose one or more qualities that you like in the sloth:
+            </label>
+            <br>
+            <label for="loving"><input id="loving" type="checkbox" name="personality" value="patient" checked> Patient</label>
+            <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+            <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label>
+            <label for="balanced"><input id="balanced" type="checkbox" name="personality" value="balanced"> Balanced</label>
+            <label for="stupid"><input id="stupid" type="checkbox" name="personality" value="stupid"> A little stupid</label>
+            <br>
+            <br>
+			<label>
+			    Your message:
+			    <textarea name="message"></textarea>
+			  </label>
+              <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
